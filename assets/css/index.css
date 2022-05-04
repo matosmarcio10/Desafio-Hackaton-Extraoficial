@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+:root {
+    --primary-color: #000080;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +12,8 @@
 }
 
 header {
-    padding: 25px 10px;
-    background-color: #6033df;
+    padding: 10px 0;
+    background-color: var(--primary-color);
 }
 
 header nav {
@@ -18,18 +22,41 @@ header nav {
     align-items: center;
 }
 
-nav ul {
+.navMenu {
     list-style: none;
-    width: 80%;
+    padding-left: 40px;
     display: flex;
     justify-content: space-evenly;
+    gap: 60px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #D9D9D9;
     font-size: 0.9rem;
     font-weight: 400;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FFF;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFF;
 }
 
 .loginBtn,
@@ -46,7 +73,7 @@ nav a {
 }
 
 .hoverBtn:hover {
-    color: #6033df;
+    color: var(--primary-color);
 }
 
 .hoverBtn::before {
@@ -75,7 +102,7 @@ nav a {
 }
 
 .introduction img {
-    width: 30vw;
+    width: 45vw;
 }
 
 .introduction h1 {
@@ -84,24 +111,29 @@ nav a {
 }
 
 .introduction h3 {
-    color: #6033DF;
+    color: var(--primary-color);
     font-size: 2.8vw;
     margin: 40px 0 20px 0;
 }
 
 .introduction p {
     width: 65%;
-    font-size: 1.8vw;
+    font-size: 1.9vw;
 }
 
 .introduction .startBtn {
-    color: #6033df;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 700;
+    font-size: 2.2vw;
     margin: 35px 0 10px 0;
-    padding: 1vw 8vw;
+    width: 40vw;
+    height: 6vw;
     border: solid 1px;
     border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .startBtn:hover {
@@ -109,13 +141,13 @@ nav a {
 }
 
 .introduction .hoverBtn::before {
-    background-color: #6033df;
+    background-color: var(--primary-color);
     z-index: -1;
     transform: skewX(55deg);
 }
 
 .users {
-    color: #6033DF;
+    color: var(--primary-color);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -123,12 +155,52 @@ nav a {
 }
 
 .users p {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .users .dot {
-    background-color: #6033DF;
+    background-color: var(--primary-color);
     width: 6px;
     height: 5px;
     border-radius: 50%;
+}
+
+@media (max-width: 860px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navItem {
+        margin: 16px 0;
+    }
+
+    .navMenu.active{
+        left: 0;
+    }
+    
+    .loginBtn {
+        margin-right: 10%;
+    }
 }
