@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
-    color: #FFF;
+    color: #f1f1f1;
     border: none;
   }
   
@@ -64,6 +64,7 @@
   label {
     font-weight: bold;
     font-size: .8rem;
+    padding: 5px;
   }
   
   input {
@@ -71,6 +72,7 @@
     padding: 10px;
     font-size: .9rem;
     margin-bottom: 40px;
+    color: #000000;
   }
   
   input:focus {
