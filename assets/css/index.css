@@ -470,24 +470,6 @@ footer ul a {
     max-width: 300px;
   }
 
-  .clouds img {
-    max-width: 200px;
-    top: -50px;
-  }
-
-  .midleContainer {
-    padding: 250px 0 180px 0;
-  }
-
-  .midleContainer p {
-    font-size: 7vw;
-    width: 90vw;
-  }
-
-  .midleContainer img {
-    width: 90vw;
-  }
-
   .ourTeam h3 {
     font-size: 1.6rem;
   }
@@ -532,5 +514,25 @@ footer ul a {
 
   .inputContainer {
     margin-left: 20%;
+  }
+}
+
+@media (max-width: 420px) {
+  .clouds img {
+    max-width: 200px;
+    top: -50px;
+  }
+
+  .midleContainer {
+    padding: 250px 0 180px 0;
+  }
+
+  .midleContainer p {
+    font-size: 7vw;
+    width: 90vw;
+  }
+
+  .midleContainer img {
+    width: 90vw;
   }
 }
