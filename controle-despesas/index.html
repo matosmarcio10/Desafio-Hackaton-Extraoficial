@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/despesas.css" />
+    <title>Controle de despesas</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="navMenu">
+          <li class="navItem">
+            <a class="navLink" href="../index.html" title="Ir para Home">Home</a>
+          </li>
+          <li class="navItem">
+            <a
+              class="navLink"
+              href="../educacao-financeira/index.html"
+              title="Ir para Educação Financeira"
+              >Educação Financeira</a
+            >
+          </li>
+          <li class="navItem">
+            <a
+              class="navLink"
+              href="../controle-despesas/index.html"
+              title="Ir para Controle de Despesas"
+              >Controle de Despesas</a
+            >
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="../sobre/index.html" title="Ir para Sobre">Sobre</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <a href="../login/index.html" class="loginBtn hoverBtn">Entrar</a>
+      </nav>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+      <h2>Controle de despesas</h2>
+
+      <div class="container">
+        <h4>SALDO ATUAL</h4>
+
+        <h2 id="balance" class="balance">R$ 0.00</h2>
+
+        <div class="incExpContainer">
+          <div>
+            <h4>RECEITAS</h4>
+            <p id="moneyPlus" class="money plus">+ R$0.00</p>
+          </div>
+
+          <div>
+            <h4>DESPESAS</h4>
+            <p id="moneyMinus" class="money minus">- R$0.00</p>
+          </div>
+        </div>
+
+        <h3>Transações</h3>
+
+        <ul id="transactions" class="transactions"></ul>
+
+        <h3>Adicionar transação</h3>
+
+        <form id="form">
+          <div class="formControl">
+            <label for="text">Nome</label>
+            <input
+              autofocus
+              type="text"
+              id="text"
+              placeholder="Nome da transação"
+            />
+            <p class="error" id="nameRequiredError">
+              <i class="fa-solid fa-circle-exclamation"></i> O campo nome não
+              pode estar vazio!
+            </p>
+          </div>
+
+          <div class="formControl">
+            <label for="amount"
+              >Valor
+              <small>(use valores negativos para despesas)</small>
+            </label>
+            <input type="number" id="amount" placeholder="Valor da transação" />
+            <p class="error" id="amountRequiredError">
+              <i class="fa-solid fa-circle-exclamation"></i> O campo valor não
+              pode estar vazio!
+            </p>
+          </div>
+
+          <button class="btn">ADICIONAR</button>
+        </form>
+      </div>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <ul>
+        <li>2022</li>
+        <li>•</li>
+        <li>Grupo 30</li>
+        <li>•</li>
+        <li>
+          <a
+            href="https://github.com/matosmarcio10/Desafio-Hackaton-Extraoficial"
+            target="_blank"
+            title="Ir para github"
+          >
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="../assets/js/despesas.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6d219866b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
