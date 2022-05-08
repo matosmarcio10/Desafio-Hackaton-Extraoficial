@@ -42,14 +42,36 @@ header nav {
 }
 
 nav a {
+  position: relative;
   text-decoration: none;
   color: #FFF;
   font-size: 0.85rem;
   font-weight: 400;
 }
 
-nav li a:hover {
-  text-decoration: underline;
+nav li a::after {
+  content: '';
+  border-bottom: 2px solid #FFF;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  height: 100%;
+}
+
+nav li a:hover::after {
+  animation: hoverEffect 0.5s forwards;
+  opacity: 1;
+}
+
+@keyframes hoverEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .hamburger {
@@ -426,10 +448,6 @@ footer ul a {
   .clouds img {
     right: 30%;
   }
-  
-  /* .listFigure img {
-    width: 412px;
-  } */
   
   .midleContainer p {
     font-size: 1.7rem;
