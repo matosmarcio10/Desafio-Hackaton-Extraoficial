@@ -1,3 +1,5 @@
+// Menu hamburguer
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navMenu");
 
@@ -11,6 +13,7 @@ document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", (
   navMenu.classList.remove("active");
 }))
 
+// Controle de despesas
 const transactionsUl = document.querySelector('#transactions')
 const incomeDisplay = document.querySelector('#moneyPlus')
 const expenseDisplay = document.querySelector('#moneyMinus')
@@ -146,6 +149,3 @@ const toggleErrorDisplayNone = () => {
   document.getElementById('nameRequiredError').style.display = 'none'
   document.getElementById('amountRequiredError').style.display = 'none'
 }
-
-
-console.log(updatelocalStorage())

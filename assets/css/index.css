@@ -21,7 +21,7 @@
   background: var(--primary-color);
 }
 
-
+/* Menu de navegação */
 header {
   padding: 24px 0;
   background-color: var(--primary-color);
@@ -125,6 +125,7 @@ nav li a:hover::after {
   width: 160%;
 }
 
+/* Conteúdo principal */
 .introduction {
   margin-top: 90px;
   display: flex;
@@ -149,7 +150,7 @@ nav li a:hover::after {
 }
 
 .introduction p {
-  width: 685px;
+  max-width: 685px;
   font-size: 1.2rem;
   color: #858585;
 }
@@ -286,8 +287,8 @@ nav li a:hover::after {
 }
 
 .depositionsContainer img {
-  width: 120px;
-  height: 120px;
+  max-width: 120px;
+  max-height: 120px;
   margin-right: 12px;
 }
 
@@ -346,6 +347,7 @@ nav li a:hover::after {
   background-color: var(--primary-color);
 }
 
+/* Rodapé */
 footer {
   height: 60px;
   background-color: var(--primary-color);
@@ -451,7 +453,84 @@ footer ul a {
   
   .midleContainer p {
     font-size: 1.7rem;
-    font-weight: 600;
     width: 390px;
+  }
+}
+
+@media (max-width: 700px) {
+  .introduction img {
+    width: 80vw;
+  }
+
+  .introduction h1 {
+    font-size: 4rem;
+  }
+
+  .introduction .startBtn {
+    max-width: 300px;
+  }
+
+  .clouds img {
+    max-width: 200px;
+    top: -50px;
+  }
+
+  .midleContainer {
+    padding: 250px 0 180px 0;
+  }
+
+  .midleContainer p {
+    font-size: 7vw;
+    width: 90vw;
+  }
+
+  .midleContainer img {
+    width: 90vw;
+  }
+
+  .ourTeam h3 {
+    font-size: 1.6rem;
+  }
+
+  .membersContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .memberInfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .memberInfo img {
+    margin-right: 20px;
+  }
+
+  .memberInfo .elizeu {
+    margin: 0 40px 0 -20px;
+  }
+
+  .depositions h3 {
+    font-size: 1.6rem;
+  }
+
+  .depositionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutContainer img {
+    margin: 0;
+  }
+
+  .inputContainer {
+    margin-left: 20%;
   }
 }
