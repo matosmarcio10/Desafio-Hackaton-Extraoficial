@@ -8,20 +8,22 @@
 }
 
 body {
-  background-image: url(../image/bg-finances.jpg);
+  background-image: url(/assets/image/bg-finances.jpg);
   background-size: cover;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
 }
 
-a, label {
-  font-size: .8rem; /* 16 * .8 = x */
+a,
+label {
+  font-size: 0.8rem; /* 16 * .8 = x */
 }
 
 a:hover {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 /* Container login */
@@ -44,14 +46,15 @@ form {
   margin-bottom: 40px;
 }
 
-label, input {
+label,
+input {
   display: block;
   width: 100%;
   text-align: left;
 }
 
 label {
-  font-weight:bold;
+  font-weight: bold;
   padding: 5px;
 }
 
@@ -64,7 +67,7 @@ input {
 }
 
 input:focus {
-  border-bottom: 2px solid #08558B;
+  border-bottom: 2px solid #08558b;
 }
 
 #forgot-pass {
@@ -72,7 +75,7 @@ input:focus {
   display: block;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -81,16 +84,15 @@ input[type="submit"] {
   border-radius: 20px;
   margin-top: 30px;
   color: #ffffff;
-  background-color: #FF4500;
-
+  background-color: #ff4500;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: #181818;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /* Registrar */
- #register-container p {
-   margin-bottom: 10px;
- }
+#register-container p {
+  margin-bottom: 10px;
+}
