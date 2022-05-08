@@ -405,7 +405,7 @@ footer ul a {
   }
 
   .navMenu {
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 50px;
     gap: 0;
