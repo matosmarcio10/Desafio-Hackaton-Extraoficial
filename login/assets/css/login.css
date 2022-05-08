@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(../image/bg-finances.jpg);
+  background-image: url(/assets/image/bg-finances.jpg);
   background-size: cover;
 }
 
