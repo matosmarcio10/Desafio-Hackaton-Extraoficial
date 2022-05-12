@@ -27,3 +27,4 @@
 - [StorySet](https://storyset.com/illustration/)
 - [Figma](https://www.figma.com/file/BA39OqdCYOTMgn3stf9OAm/Finance-Hackaton?node-id=0%3A3)
 - [Font Awesome](https://fontawesome.com/)
+- Template baseado em [Desafios Dev](https://github.com/desafiosdev)
